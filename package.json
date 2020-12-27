@@ -1,0 +1,34 @@
+{
+  "scripts": {
+    "build": "styleguidist build",
+    "start": "styleguidist server",
+    "prepublishOnly": "rm -fr ./dist & babel ./src --out-dir ./dist -s inline"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-styleguidist": "^11.1.5",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.0"
+  },
+  "name": "rcl_project",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Serge",
+  "license": "MIT",
+  "peerDependencies": {
+    "@material-ui/core": "^4.x",
+    "prop-types": "^15.x",
+    "react": "^16.x",
+    "react-dom": "^16.x"
+  }
+}
